@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Finanzas</string>
+    <string name="activity_registro_name">Login</string>
+    <string name="string_bienvenido">BIENVENIDO</string>
+    <string name="string_num">Número</string>
+    <string name="string_pass">Contraseña</string>
+    <string name="string_noaccount">No tienes cuenta</string>
+    <string name="string_iniciosesion">INICIAR SESIÓN</string>
+    <string name="string_registro">REGÍSTRATE</string>
+</resources>

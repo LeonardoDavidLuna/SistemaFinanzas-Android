@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondon"
+    android:orientation="vertical"
+    tools:context="nickl.bddemo.Entrada">
+
+    <TextView
+        android:id="@+id/eti_Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/background_light"
+        android:text="GASTOS"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:hint="Rubro"
+        android:inputType="textCapWords"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="Costo"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="Fecha (dd/mm/yy)"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Guardar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/background_light"
+                android:onClick="alta"
+                android:text="Guardar"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_BorrarMes"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/background_light"
+                android:onClick="bajaMes"
+                android:text="Borrar Mes"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_BorrarTodo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="bajaTodo"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/background_light"
+                android:text="Restaurar"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_Volver"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/background_light"
+                android:onClick="volver"
+                android:text="volver"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
