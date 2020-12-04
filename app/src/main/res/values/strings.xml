@@ -7,4 +7,18 @@
     <string name="string_noaccount">No tienes cuenta</string>
     <string name="string_iniciosesion">INICIAR SESIÓN</string>
     <string name="string_registro">REGÍSTRATE</string>
+    <string name="string_log">REGÍSTRATE</string>
+    <string name="string_saldo">Saldo</string>
+    <string name="str_correo">Correo</string>
+    <string name="str_pass">Contraseña</string>
+    <string name="str_name">Nombre</string>
+    <string name="str_register">REGISTRARSE</string>
+    <string name="str_repass">Confirma Contraseña</string>
+    <string name="str_num">Número</string>
+    <string name="str_registro">REGISTRO</string>
+    <string name="str_query_spend">CONSULTAR GASTOS</string>
+    <string name="str_add">Sumar</string>
+    <string name="string_gastos_mensuales">Gastos de este mes</string>
+    <string name="str_0">0</string>
+    <string name="str_config">CONFIGURACIÓN</string>
 </resources>

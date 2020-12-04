@@ -1,131 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/fondor"
-    android:windowSoftInputMode="adjustPan|adjustResize"
+    android:orientation="vertical"
     tools:context="nickl.bddemo.Registro">
+
 
     <TextView
         android:id="@+id/eti_Registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/str_registro"
         android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="REGISTRO"
         android:textSize="50sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editNumero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:hint="@string/str_num"
+        android:inputType="number"
         android:textColor="@android:color/black"
         android:textColorHint="?attr/editTextColor"
         android:textColorLink="@android:color/white"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
-        android:hint="Número"
-        android:inputType="number"
-        android:textSize="35sp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eti_Registro" />
 
     <EditText
         android:id="@+id/editNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:hint="Nombre"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:hint="@string/str_name"
         android:inputType="textCapWords"
         android:textColor="@android:color/black"
         android:textColorHint="?attr/editTextColor"
-        android:textSize="35sp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumero" />
 
     <EditText
         android:id="@+id/editSaldo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:hint="Saldo"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:hint="@string/string_saldo"
         android:inputType="numberDecimal"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"
-        android:textSize="35sp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <EditText
         android:id="@+id/editCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:hint="@string/str_correo"
+        android:inputType="textEmailAddress"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         android:textColorLink="@android:color/white"
-        android:hint="Correo"
-        android:inputType="textEmailAddress"
-        android:textSize="35sp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSaldo" />
 
     <EditText
         android:id="@+id/editContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:hint="@string/str_pass"
+        android:inputType="textPassword"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/background_light"
         android:textColorLink="@android:color/white"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:textSize="35sp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCorreo" />
 
     <EditText
         android:id="@+id/editConfirmaContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:hint="@string/str_repass"
+        android:inputType="textPassword"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/background_light"
         android:textColorLink="@android:color/white"
-        android:hint="Confirma Contraseña"
-        android:inputType="textPassword"
-        android:textSize="35sp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContraseña" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shape"
+        android:onClick="alta"
+        android:text="@string/str_register"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/btn_registrar"
-            android:layout_width="290dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            android:layout_marginStart="40dp"
-            android:background="@drawable/shape"
-            android:textColor="@android:color/background_light"
-            android:onClick="alta"
-            android:text="REGISTRARSE"
-            android:textSize="40sp" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

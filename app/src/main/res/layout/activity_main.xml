@@ -12,7 +12,7 @@
         android:id="@+id/eti_Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="25dp"
         android:text="@string/string_bienvenido"
         android:textColor="@android:color/background_light"
         android:textSize="50sp"
@@ -25,17 +25,18 @@
 
     <EditText
         android:id="@+id/editNumero"
-        android:layout_width="0sp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20sp"
-        android:layout_marginTop="150sp"
-        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
         android:hint="@string/string_num"
         android:inputType="number"
         android:textColor="@android:color/background_light"
         android:textColorHint="?attr/editTextColor"
         android:textColorLink="@android:color/white"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +58,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNumero" />
+        app:layout_constraintTop_toBottomOf="@+id/editNumero"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView"
@@ -65,7 +67,7 @@
         android:layout_height="0dp"
 
         android:layout_marginStart="15sp"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="15sp"
         android:background="@android:color/transparent"
         android:text="@string/string_noaccount"
@@ -99,15 +101,12 @@
         android:layout_width="220dp"
         android:layout_height="63dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/shape"
         android:onClick="registro"
-        android:text="REGÍSTRATE"
+        android:text="@string/string_log"
         android:textColor="@android:color/background_light"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
